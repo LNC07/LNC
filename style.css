@@ -1,0 +1,97 @@
+body {
+    background-color: #2b0d3f;
+    color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.balance {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.coin-container {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+#coin {
+    font-size: 300px; /* 3x larger than before */
+    cursor: pointer;
+}
+
+.actions {
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions button {
+    background-color: #5a2d82;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.actions button:hover {
+    background-color: #7b4aa3;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
